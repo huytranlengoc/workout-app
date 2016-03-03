@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.feature "Creating exercise" do
   before do
-    @john = User.create(email: "ngochuydev@gmail.com", password: "password")
+    @john = User.create(first_name: "John", last_name: "Doe", email: "ngochuydev@gmail.com", password: "password")
     login_as(@john)
   end
 
